@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background: rgba(0,0,0, .6);
+    z-index: 999;
+}
+
+nav#nav-main {
+	width: 100% !important;
+	position: fixed !important;
+	overflow-y: hidden !important;
+}
+
+nav ul {
+	width: 100%;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 2% 5%;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+nav ul a li  {
+    position: relative;
+    z-index: 1;
+}
+
+.desktop #bgVid {
+	width: 100%;
+}
+
+.mobile #bgVid {
+	display: none;
+}
+
+.navigation a:hover{
+  animation: flicker01 1s infinite;
+  color: #66e3f8;
+}
+
+@media only screen and (max-width: 600px){
+  .navigation{
+    display:block;
+    padding:0;
+    text-align:center;
+  }
+  .navigation a{
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+}
+
+/* smaller than 1024px, this is for the ipad pro*/
+
+@media all and (max-width: 1024px) {
+	.mobile #bgVid {
+    object-fit: cover !important;
+    height: 100vh;
+    position: fixed;
+    left: -68%;
+    display: block;
+}
+
+.desktop #bgVid {
+	display: none;
+}
+
+.homepage-video {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+	nav ul li {
+	padding: 5% 5%;
+	font-size: 2em;
+}
+}
+
+/* smaller than 768px, this is for the ipad */
+
+@media all and (max-width: 768px) {
+	nav ul li {
+	font-size: 1.5em;
+}
+}
+
+
+/* smaller than 500px -- this is for galaxy note 3, pixel 2, iphone 6/7/8 plus */
+
+@media all and (max-width: 500px) {
+
+.mobile #bgVid {
+    object-fit: cover !important;
+    height: 100vh;
+    position: fixed;
+    left: -108%;
+}
+
+.homepage-video {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+nav ul li {
+	padding: 7% 5%;
+	font-size: 1em;
+}
+
+}
+
+/* smaller than 400px -- this is for galaxy note 3, pixel 2 */
+
+@media all and (max-width: 400px) {
+
+.mobile #bgVid {
+    object-fit: cover !important;
+    height: 100vh;
+    position: absolute;
+    left: -145%;
+}
+
+.homepage-video {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+nav ul li {
+	padding: 7% 5%;
+	font-size: 1em;
+}
+
+}
+
+/* specifically for the iphone 6/7/8 */
+
+@media all and (max-width: 375px){
+@media all and (max-height: 700px) {
+
+.mobile #bgVid {
+    object-fit: cover !important;
+    height: 100vh;
+    position: fixed;
+    left: -105% !important;
+}
+
+.homepage-video {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+nav ul li {
+	padding: 7% 5%;
+	font-size: 1em;
+}
+
+}
+}
+
+/* specifically for the iphone x*/
+
+@media all and (max-width: 375px){
+@media all and (max-height: 820px) {
+
+.mobile #bgVid {
+    object-fit: cover !important;
+    height: 100vh;
+    position: fixed;
+    left: -140%;
+}
+
+.homepage-video {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+nav ul li {
+	padding: 7% 5%;
+	font-size: .9em;
+}
+
+}
+}
